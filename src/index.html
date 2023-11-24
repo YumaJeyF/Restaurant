@@ -1,0 +1,109 @@
+<!DOCTYPE html>
+<html lang="en">
+    @@include('html/head.html', {
+        'title': 'Главная'
+    })
+<body>
+    <div class="container">
+        @@include('html/header.html')
+        <section class="section first-block">
+            <div class="background-image">
+                <img src="@img/bg-hero.jpg" alt="Фон для первого блока" class="back-pic">
+                <div class="inside-back-color"></div>
+                <div class="first-block-main-inf">
+                    <div class="title-inf">
+                        <div class="first-block-left">
+                            <div class="first-block-left-inf">
+                                <h1>Наслаждайтесь вкусной едой</h1>
+                                <p>Lorem ipsum dolor sit amet consectetur adipisicing elit. Molestias, dolor? Reprehenderit, sapiente optio! Qui laudantium distinctio sed maiores voluptate ratione. Ut voluptas dolore consequatur porro!</p>
+                                <button class="open-book-table">ЗАБРОНИРУЙТЕ СТОЛИК</button>
+                            </div>
+                        </div>
+                    <div class="first-block-right">
+                        <div class="first-block-picture">
+                            <img src="@img/hero.png" alt="Гриль с мясом" class="img-pic">
+                        </div>
+                    </div>
+                    </div>
+                </div>
+            </div>
+        </section>
+        <section class="section second-block">
+            <div class="second-block-container">
+                <div class="main-body-first main-inf change">
+                    <div class="second-block-inf body-first" data-modal="#modal-1">
+                        <i class='fa fa-3x fa-user-tie text-primary mb-4'></i>
+                        <h2>Шеф-повара</h2>
+                        <p>Lorem ipsum dolor sit, amet consectetur adipisicing elit. Excepturi aut perspiciatis magnam minima quasi esse vitae aperiam. Alias, provident est.</p>
+                    </div>
+                    <div class="modal-container" id="modal-1">
+                        <div class="modal-window">
+                            <div class="modal-content">
+                                <h1>Lorem, ipsum.</h1>
+                                <p>Lorem ipsum dolor sit, amet consectetur adipisicing elit. Iste delectus porro quaerat sapiente? Sint libero possimus dolore asperiores magnam dicta.</p>
+                                <p>Lorem ipsum dolor sit amet consectetur, adipisicing elit. Ullam quidem velit, ad dignissimos aspernatur esse sint alias quia dolore a?</p>
+                            </div>
+                            <button class="close-modal-window"></button>
+                        </div>
+                    </div>
+
+                    <div class="second-block-inf body-first" data-modal="#modal-2">
+                        <i class='fa fa-3x fa-utensils text-primary mb-4'></i>
+                        <h2>Качественная еда</h2>
+                        <p>Lorem ipsum dolor sit amet consectetur, adipisicing elit. Sed blanditiis consequuntur ipsum alias at exercitationem, temporibus modi quibusdam soluta fugit.</p>
+                    </div>
+                    <div class="modal-container" id="modal-2">
+                        <div class="modal-window">
+                            <div class="modal-content">
+                                <h1>Lorem, ipsum.</h1>
+                                <p>Lorem ipsum dolor sit, amet consectetur adipisicing elit. Iste delectus porro quaerat sapiente? Sint libero possimus dolore asperiores magnam dicta.</p>
+                                <p>Lorem ipsum dolor sit amet consectetur, adipisicing elit. Ullam quidem velit, ad dignissimos aspernatur esse sint alias quia dolore a?</p>
+                            </div>
+                            <button class="close-modal-window"></button>
+                        </div>
+                    </div>
+
+                    <div class="second-block-inf body-first" data-modal="#modal-3">
+                        <i class="fa fa-3x fa-cart-plus text-primary mb-4"></i>
+                        <h2>Онлайн заказ</h2>
+                        <p>Lorem ipsum dolor sit amet consectetur adipisicing elit. Dolor harum assumenda numquam ex cum ipsum enim quia esse optio illum.</p>
+                    </div>
+                    <div class="modal-container" id="modal-3">
+                        <div class="modal-window">
+                            <div class="modal-content">
+                                <h1>Lorem, ipsum.</h1>
+                                <p>Lorem ipsum dolor sit, amet consectetur adipisicing elit. Iste delectus porro quaerat sapiente? Sint libero possimus dolore asperiores magnam dicta.</p>
+                                <p>Lorem ipsum dolor sit amet consectetur, adipisicing elit. Ullam quidem velit, ad dignissimos aspernatur esse sint alias quia dolore a?</p>
+                            </div>
+                            <button class="close-modal-window"></button>
+                        </div>
+                    </div>
+
+                    <div class="second-block-inf body-first" data-modal="#modal-4">
+                        <i class="fa fa-3x fa-headset text-primary mb-4"></i>
+                        <h2>Обслуживание 24/7</h2>
+                        <p>Lorem ipsum dolor sit amet consectetur adipisicing elit. Quam quod itaque assumenda ea impedit soluta facere distinctio illum quia porro!</p>
+                    </div>
+                    <div class="modal-container" id="modal-4">
+                        <div class="modal-window">
+                            <div class="modal-content">
+                                <h1>Lorem, ipsum.</h1>
+                                <p>Lorem ipsum dolor sit, amet consectetur adipisicing elit. Iste delectus porro quaerat sapiente? Sint libero possimus dolore asperiores magnam dicta.</p>
+                                <p>Lorem ipsum dolor sit amet consectetur, adipisicing elit. Ullam quidem velit, ad dignissimos aspernatur esse sint alias quia dolore a?</p>
+                            </div>
+                            <button class="close-modal-window"></button>
+                        </div>
+                    </div>
+                </div>
+            </div>     
+       </section>
+        @@include('html/about-us-inf.html')
+        @@include('html/food-menu.html')
+        @@include('html/booking-table.html')
+        @@include('html/our-chefs.html')
+        @@include('html/feedback-about-us.html')
+        @@include('html/footer.html')
+    </div>
+    <script src="js/main.min.js"></script>
+</body>
+</html>

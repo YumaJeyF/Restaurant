@@ -1,0 +1,208 @@
+.contact-us {
+    width: 90%;
+    margin: 8em auto;
+}
+
+.contact-us-title {
+    text-align: center;
+    opacity: 0;
+}
+
+.contact-us-title.animation {
+    animation: fadeInUp 0.9s;
+    animation-fill-mode: forwards
+}
+
+.contact-us-title h3 {
+    color: orange;
+    display: flex;
+    justify-content: center;
+    align-items: center;
+    gap: 10px;
+}
+
+.contact-us-title h3::before,
+.contact-us-title h3::after {
+    content: '';
+    background-color: orange;
+    width: 45px;
+    height: 2px;
+}
+
+.contact-us-title h1 {
+    font-size: 40px;
+    margin-top: 5px;
+}
+
+.contact-us-main-short-inf {
+    display: flex;
+    justify-content: center;
+    gap: 13em;
+}
+
+.contact-us-main-short-inf h3 {
+    display: flex;
+    color: orange;
+    display: flex;
+    align-items: center;
+    gap: 10px;
+    margin-bottom: 10px;
+}
+
+.contact-us-main-short-inf h3::after {
+    content: '';
+    width: 45px;
+    height: 2px;
+    background-color: orange;
+}
+
+.short-inf-email p {
+    margin: 0;
+}
+
+.short-inf-email {
+    display: flex;
+    align-items: center;
+    font-size: 17px;
+    gap: 8px;
+}
+
+.short-inf-email i {
+    color: orange;
+}
+
+.contact-us-main-inf {
+    display: flex;
+    gap: 30px;
+    justify-content: center;
+    margin-top: 40px;
+}
+
+.frm-third-inp {
+    outline: none;
+    font-size: 17px;
+    padding: 30px 5px 10px 5px;
+    border-radius: 5px;
+    border: 1px solid #ced4da;
+    width: 100%;
+    box-sizing: border-box;
+}
+
+.frm-third-inp.error-valid {
+    background-color: #e0a7a7;
+}
+
+.frm-third-inf {
+    position: relative;
+}
+
+.frm-third-label {
+    position: absolute;
+    left: 5px;
+    top: 22px;
+    font-size: 17px;
+    transition: all .3s;
+    pointer-events: none;
+}
+
+.frm-third-inp:focus + .frm-third-label,
+.frm-third-inp:not(:focus):valid + .frm-third-label {
+    top: 10px;
+    transform: scale(0.9);
+    transform-origin: left;
+    color: grey;
+}
+
+.frm-third {
+    display: grid;
+    gap: 15px;
+    grid-template-columns: repeat(2, auto);
+    grid-template-rows: repeat(3, auto);
+    opacity: 0;
+}
+
+.frm-third.animation {
+    animation: fadeInUp 0.9s;
+    animation-fill-mode: forwards
+}
+
+.frm-third-inf:nth-child(3) {
+    grid-column: 1 / -1;
+}
+
+.frm-third-inf:nth-child(4) {
+    grid-column: 1 / -1;
+}
+
+.frm-third #btn-sub {
+    grid-column: 1 / -1;
+    font-size: 17px;
+    padding: 16px 5px;
+    border: none;
+    background-color: orange;
+    border-radius: 5px;
+    color: #fff;
+    cursor: pointer;
+}
+
+.frm-third-inf textarea {
+    resize: vertical;
+}
+
+.contact-us-map {
+    opacity: 0;
+    transition: all 0.9s;
+}
+
+.contact-us-map.animation {
+    opacity: 1;
+}
+
+@media (max-width: 1100px) {
+    .contact-us-main-short-inf {
+        gap: 5em;
+    }
+    .contact-us-map {
+        width: 70%;
+    }
+    .contact-us-map > div {
+        width: 100%;
+        height: 100%;
+    }
+    .contact-us-map > div > iframe {
+        width: 100%;
+        height: 100%;
+    }
+}
+
+@media (max-width: 823px) {
+    .contact-us-main-short-inf {
+        gap: 2em;
+    }
+}
+
+@media (max-width: 768px) {
+    .contact-us-main-inf {
+        display: block;
+    }
+    .contact-us-map {
+        width: 100%;
+        height: 400px;
+        margin-bottom: 30px;
+    }
+    .contact-us-main-short-inf {
+        display: block;
+    }
+    .short-inf-booking {
+        margin-bottom: 30px;
+    }
+}
+
+@media (max-width: 360px) {
+    .contact-us-map {
+        height: 300px;
+    }
+    .contact-us-title h1 {
+        font-size: 34px;
+    }
+}

@@ -1,0 +1,51 @@
+@keyframes rotation {
+    0% {
+        transform: rotate(0deg);
+    }
+    100% {
+        transform: rotate(360deg);
+    }
+}
+
+@keyframes toLeft {
+    0% {
+        transform: translateX(-125%);
+    }
+    100% {
+        transform: translateX(0);
+    }
+}
+
+@keyframes fadeInUp {
+    0% {
+        transform: translate3d(0,100%,0);
+    }
+    100% {
+        opacity: 1;
+        transform: none;
+    }
+}
+
+@keyframes changePicture {
+    0% {
+        transform: scale3d(.3,.3,.3);
+    }
+    100% {
+        opacity: 1;
+        transform: none;
+    }
+}
+
+@keyframes pulse-border {
+    0% {
+        transform: scale(0.7);
+        opacity: 0;
+    }
+    50% {
+        opacity: 0.7;
+    }
+    100% {
+        opacity: 0;
+        transform: scale(1.4);
+    }
+}

@@ -1,0 +1,90 @@
+/* Swiper */
+
+.swiper {
+    width: 90%;
+}
+
+.slider-inner {
+    border: 1px solid  #dee2e6;
+    border-radius: 5px;
+    padding: 20px;
+}
+
+.swiper-slide-active {
+    border-radius: 5px;
+}
+
+.slider-inner p {
+    font-size: 17px;
+    color: rgb(100, 98, 98);
+}
+
+.feedback-main {
+    display: flex;
+    gap: 15px;
+    align-items: center;
+}
+
+.feedback-icon {
+    border-radius: 100%;
+    overflow: hidden;
+    width: 60px;
+    height: 60px;
+}
+
+.feedback-icon img {
+    width: 100%;
+    height: 100%;
+}
+
+.feedback-short-inf h3 {
+    margin: 0;
+    margin-bottom: 5px;
+}
+
+.feedback-short-inf span {
+    font-size: 15px;
+    color: rgb(100, 98, 98);
+}
+
+.slider-inner i {
+    color: orange;
+    font-size: 40px;
+}
+
+.swiper-slide-active i {
+    color: #fff;
+}
+
+.swiper-slide-active {
+    background-color: orange;
+}
+
+.swiper-slide-active span {
+    color: #fff;
+}
+
+.swiper-slide-active h3 {
+    color: #fff;
+}
+
+.swiper-slide-active p {
+    color: #fff;
+}
+
+.swiper-pagination {
+    position: static;
+    margin-top: 20px;
+}
+
+.swiper-pagination-bullet {
+    width: 15px;
+    height: 15px;
+    border: 1px solid #dee2e6;
+    opacity: 1;
+    background-color: #fff;
+}
+
+.swiper-pagination-bullet-active {
+    background-color: orange;
+}

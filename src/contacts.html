@@ -1,0 +1,73 @@
+<!DOCTYPE html>
+<html lang="en">
+    @@include('html/head.html', {
+        'title': 'Связаться с нами'
+    })
+<body>
+    <div class="container">
+        @@include('html/header.html')
+        @@include('html/first-block.html', {
+            'headTitle': 'СВЯЗАТЬСЯ С НАМИ',
+            'nowPage': 'КОНТАКТЫ'
+        })
+        <div class="contact-us">
+            <div class="contact-us-title change">
+                <h3>Связаться с нами</h3>
+                <h1>Обращайтесь по любому запросу</h1>
+            </div>
+            <div class="contact-us-main">
+                <div class="contact-us-main-short-inf">
+                    <div class="short-inf-booking">
+                        <h3>Бронирование</h3>
+                        <div class="short-inf-email">
+                            <i class="fa fa-envelope-open text-primary me-2"></i>
+                            <p>warlokmc@gmail.com</p>
+                        </div>
+                    </div>
+                    <div class="short-inf-booking">
+                        <h3>Общая информация</h3>
+                        <div class="short-inf-email">
+                            <i class="fa fa-envelope-open text-primary me-2"></i>
+                            <p>warlokmc@gmail.com</p>
+                        </div>
+                    </div>
+                    <div class="short-inf-booking">
+                        <h3>Технические</h3>
+                        <div class="short-inf-email">
+                            <i class="fa fa-envelope-open text-primary me-2"></i>
+                            <p>warlokmc@gmail.com</p>
+                        </div>
+                    </div>
+                </div>
+                <div class="contact-us-main-inf">
+                    <div class="contact-us-map change">
+                        <div style="position:relative;overflow:hidden;"><a href="https://yandex.ru/maps/195/ulyanovsk/?utm_medium=mapframe&utm_source=maps" style="color:#eee;font-size:12px;position:absolute;top:0px;">Ульяновск</a><a href="https://yandex.ru/maps/195/ulyanovsk/house/kamyshinskaya_ulitsa_43/YEEYdA9kQEAHQFtufX52eX9qZg==/?ll=48.285093%2C54.278647&utm_medium=mapframe&utm_source=maps&z=18.2" style="color:#eee;font-size:12px;position:absolute;top:14px;">Камышинская улица, 43 — Яндекс Карты</a><iframe src="https://yandex.ru/map-widget/v1/?ll=48.285093%2C54.278647&mode=whatshere&whatshere%5Bpoint%5D=48.285154%2C54.278506&whatshere%5Bzoom%5D=17&z=18.2" width="560" height="400" frameborder="1" allowfullscreen="true" style="position:relative;"></iframe></div>
+                    </div>
+                    <div class="contact-us-form change" data-anim-last-child="true">
+                        <form class="frm-third">
+                            <div class="frm-third-inf">
+                                <input type="text" name="name" id="frm-third-inp-name" class="frm-third-inp" required>
+                                <label for="frm-third-inp-name" class="frm-third-label">Ваше имя</label>
+                            </div>
+                            <div class="frm-third-inf">
+                                <input type="text" name="email" id="frm-third-inp-email" class="frm-third-inp" required>
+                                <label for="frm-third-inp-email" class="frm-third-label">Ваш Email</label>
+                            </div>
+                            <div class="frm-third-inf">
+                                <input type="text" name="theme" id="frm-third-inp-theme" class="frm-third-inp" required>
+                                <label for="frm-third-inp-theme" class="frm-third-label">Тема</label>
+                            </div>
+                            <div class="frm-third-inf">
+                                <textarea name="message" id="your-mes" class="frm-third-inp" rows="8" required></textarea>
+                                <label for="#your-mes" id="textarea-label" class="frm-third-label">Сообщение</label>
+                            </div>
+                            <button type="submit" id="btn-sub">ОТПРАВИТЬ СООБЩЕНИЕ</button>
+                        </form>
+                    </div>
+                </div>
+            </div>
+        </div>
+        @@include('html/footer.html')
+    </div>
+    <script src="/js/main.min.js"></script>
+</body>

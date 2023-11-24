@@ -1,0 +1,19 @@
+<!DOCTYPE html>
+<html lang="en">
+@@include('html/head.html', {
+    'title': 'О нас'
+})
+<body>
+    <div class="container">
+        @@include('html/header.html')
+        @@include('html/first-block.html', {
+            'headTitle': 'О НАС',
+            'nowPage': 'О НАС'
+        })
+        @@include('html/about-us-inf.html')
+        @@include('html/our-chefs.html')
+        @@include('html/footer.html')
+    </div>
+    <script src="./js/main.min.js"></script>
+</body>
+</html>

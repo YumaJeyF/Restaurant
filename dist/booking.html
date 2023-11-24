@@ -1,0 +1,185 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta http-equiv="X-UA-Compatible" content="IE=edge">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <link rel="stylesheet" href="/css/style.min.css">
+    <link rel="stylesheet" href="https://use.fontawesome.com/releases/v5.6.1/css/all.css" 
+    integrity="sha384-gfdkjb5BdAXd+lj+gudLWI+BXq4IuLW5IT+brZEZsLFm++aCMlF1V92rMkPaX4PP" crossorigin="anonymous">
+    <title>Бронирование столика</title>
+</head>
+<body>
+    <div class="container">
+        <header class="header fixed">
+    <nav class="nav fixed">
+        <div class="top-line">
+            <div class="main-line">
+                <h1 class="logo">
+                    <i class="fa fa-3x fa-utensils text-primary mb-4"></i>
+                    <span>Restoran</span>
+                </h1>
+                <div class="mobile-nav-btn">
+                    <div class="line-one"></div>
+                    <div class="line-two"></div>
+                    <div class="line-three"></div>
+                </div>
+            </div>
+        </div>
+        <div class="hidden-block">
+            <ul class="navigation">
+                <li><a href="index.html">ГЛАВНАЯ</a></li>
+                <li><a href="about-us.html">О НАС</a></li>
+                <li><a href="services.html">ОБСЛУЖИВАНИЕ</a></li>
+                <li><a href="menu.html">МЕНЮ</a></li>
+                <li class="dropdown">
+                    <a class="open-menu-btn">СТРАНИЦЫ</a>
+                    <ul class="dropdown-menu">
+                        <li><a href="booking.html" data-index="0" class="link">Бронирование</a></li>
+                        <li><a href="our-team.html" data-index="1" class="link">Наша команда</a></li>
+                        <li><a href="feedback.html" data-index="2" class="link">Отзыв</a></li>
+                    </ul>
+                </li>
+                <li><a href="contacts.html">КОНТАКТЫ</a></li>
+            </ul>
+            <button class="book-table">ЗАБРОНИРУЙТЕ СТОЛИК</button>
+        </div>
+    </nav>
+    <div class="scroll-to-top fixed">
+        <div class="scroll-to-top-inner">
+            <i class="scroll-icon">🡡</i>
+        </div>
+    </div>
+</header>
+        <section class="section first-block" data-sec="secondary">
+    <div class="background-image secondary">
+        <img src="img/bg-hero.jpg" alt="Фон для первого блока" class="back-pic">
+        <div class="inside-back-color"></div>
+        <div class="first-block-nav">
+            <h1>БРОНИРОВАНИЕ</h1>
+            <nav>
+                <a href="index.html">ГЛАВНАЯ</a><span class="separator">/</span>
+                <a class="btn-page">СТРАНИЦЫ</a><span class="separator">/</span>
+                <a href="#"><span class="white-link">БРОНИРОВАНИЕ</span></a>
+            </nav>
+        </div>
+    </div>
+</section>
+        <section class="fifth-block change" data-anim-last-child="true">
+    <div class="fifth-block-inf">
+        <div class="fifth-block-left">
+            <div class="back-pic-video">
+                <img src="img/video.jpg" alt="">
+                <button class="btn-play-video"></button>
+            </div>
+        </div>
+        <div class="fifth-block-right change" data-anim-last-child="true">
+            <div class="fifth-block-right-inf">
+                <h3>Бронирование</h3>
+            <h1>Забронируйте столик онлайн</h1>
+            <form class="frm">
+                    <div class="frm-inf">
+                        <input type="text" name="name" id="your-name" class="text-field-input" required>
+                        <label for="your-name" id="placeholder-name" class="text-field-placeholder">Ваше имя</label>
+                    </div>
+                    <div class="frm-inf">
+                        <input type="text" name="email" id="your-email" class="text-field-input" required 
+                        data-reg="^[A-Z0-9._%+-]+@[A-Z0-9-]+.+.[A-Z]{2,4}$">
+                        <label for="your-email" id="placeholder-email" class="text-field-placeholder">Ваш e-mail</label>
+                    </div>
+                    <div class="frm-inf">
+                        <input type="date" name="date" id="now-date" class="text-field-input-secondary">
+                        <label for="now-date" id="placeholder-date" class="text-field-placeholder-secondary">Дата и время</label>
+                    </div>
+                    <div class="frm-inf">
+                        <select id="sel" class="text-field-input-secondary">
+                            <option value="one">Один</option>
+                            <option value="two">Два</option>
+                            <option value="three">Три</option>
+                            <option value="three">Четыре</option>
+                            <option value="three">Пять и более</option>
+                        </select>
+                        <label for="sel" id="placeholder-sel" class="text-field-placeholder-secondary">Количество человек</label>
+                    </div>
+                <div class="frm-inf">
+                    <textarea name="mes" id="your-mes" cols="30" rows="10" class="text-field-input" required></textarea>
+                    <label for="your-mes" id="placeholer-mes" class="text-field-placeholder">Введите сообщение</label>
+                </div>
+                <button id="btn-sub" type="submit">БРОНИРУЙТЕ СЕЙЧАС</button>
+            </form>
+            </div>
+        </div>
+    </div>
+</section>
+        <footer class="footer">
+        <div class="footer-main">
+            <div class="company" id="main">
+                <h1>Компания</h1>
+                <ul class="company-inf">
+                    <li><a href="about-us.html">О нас</a></li>
+                    <li><a href="contacts.html">Связаться с нами</a></li>
+                    <li><a href="booking.html" data-index="0" class="link">Бронирование</a></li>
+                    <li><a href="">Политика конфидециальности</a></li>
+                    <li><a href="">Правила и условия</a></li>
+                </ul>
+            </div>
+            <div class="contacts" id="main">
+                <h1>Контакты</h1>
+                <div class="street">
+                    <i class="fa fa-map-marker-alt me-3"></i>
+                    <p>Улица Камышинская 43, Ульяновск, Россия</p>
+                </div>
+                <div class="number">
+                    <i class="fa fa-phone-alt me-3"></i>
+                    <p>+7-917-610-97-99</p>
+                </div>
+                <div class="email">
+                    <i class="fa fa-envelope me-3"></i>
+                    <p>warlokmc@gmail.com</p>
+                </div>
+                <div class="contacts-inf-bottom">
+                    <a href="#"><i class="fab fa-twitter"></i></a>
+                    <a href="#"><i class="fab fa-facebook-f"></i></a>
+                    <a href="#"><i class="fab fa-youtube"></i></a>
+                    <a href="#"><i class="fab fa-linkedin-in"></i></a>
+                </div>
+            </div>
+            <div class="about-open" id="main">
+                <h1>Открытие</h1>
+                <div class="about-first">
+                    <p>Понедельник - суббота</p>
+                    <span>09 утра - 09 вечера</span>
+                </div>
+                <div class="about-second">
+                    <p>Воскресенье</p>
+                    <span>С 10 утра до 08 вечера</span>
+                </div>
+            </div>
+            <div class="mailing" id="main">
+                <h1>Рассылка</h1>
+                <p>Lorem ipsum dolor sit amet, consectetur adipisicing elit. Iusto, distinctio.</p>
+                <form class="frm-2">
+                    <label>
+                        <input type="email" name="email" id="em" placeholder="Ваш email "
+                        data-reg="^[A-Z0-9._%+-]+@[A-Z0-9-]+.+.[A-Z]{2,4}$" class="inp-frm-2">
+                        <button type="submit" class="btn-send" id="btn-sub">ПОДПИСКА</button>
+                    </label>
+                </form>
+            </div>
+           </div>
+            <div class="footer-inf-bottom" id="main">
+                <div class="footer-inf-bottom-inner">
+                    <p>©️Restoran, все права защищены</p>
+                    <ul class="footer-menu">
+                        <li><a href="index.html">Главная</a></li>
+                        <li><a href="#">Файлы cookie</a></li>
+                        <li><a href="#">Справка</a></li>
+                        <li><a href="#">Вопросы и ответы</a></li>
+                    </ul>
+                </div>
+            </div>
+ </footer>
+    </div>
+    <script src="/js/main.min.js"></script>
+</body>
+</html>

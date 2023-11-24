@@ -1,0 +1,46 @@
+<section class="fifth-block change" data-anim-last-child="true">
+    <div class="fifth-block-inf">
+        <div class="fifth-block-left">
+            <div class="back-pic-video">
+                <img src="@img/video.jpg" alt="">
+                <button class="btn-play-video"></button>
+            </div>
+        </div>
+        <div class="fifth-block-right change" data-anim-last-child="true">
+            <div class="fifth-block-right-inf">
+                <h3>Бронирование</h3>
+            <h1>Забронируйте столик онлайн</h1>
+            <form class="frm">
+                    <div class="frm-inf">
+                        <input type="text" name="name" id="your-name" class="text-field-input" required>
+                        <label for="your-name" id="placeholder-name" class="text-field-placeholder">Ваше имя</label>
+                    </div>
+                    <div class="frm-inf">
+                        <input type="text" name="email" id="your-email" class="text-field-input" required 
+                        data-reg="^[A-Z0-9._%+-]+@[A-Z0-9-]+.+.[A-Z]{2,4}$">
+                        <label for="your-email" id="placeholder-email" class="text-field-placeholder">Ваш e-mail</label>
+                    </div>
+                    <div class="frm-inf">
+                        <input type="date" name="date" id="now-date" class="text-field-input-secondary">
+                        <label for="now-date" id="placeholder-date" class="text-field-placeholder-secondary">Дата и время</label>
+                    </div>
+                    <div class="frm-inf">
+                        <select id="sel" class="text-field-input-secondary">
+                            <option value="one">Один</option>
+                            <option value="two">Два</option>
+                            <option value="three">Три</option>
+                            <option value="three">Четыре</option>
+                            <option value="three">Пять и более</option>
+                        </select>
+                        <label for="sel" id="placeholder-sel" class="text-field-placeholder-secondary">Количество человек</label>
+                    </div>
+                <div class="frm-inf">
+                    <textarea name="mes" id="your-mes" cols="30" rows="10" class="text-field-input" required></textarea>
+                    <label for="your-mes" id="placeholer-mes" class="text-field-placeholder">Введите сообщение</label>
+                </div>
+                <button id="btn-sub" type="submit">БРОНИРУЙТЕ СЕЙЧАС</button>
+            </form>
+            </div>
+        </div>
+    </div>
+</section>

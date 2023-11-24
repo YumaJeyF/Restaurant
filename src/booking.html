@@ -1,0 +1,18 @@
+<!DOCTYPE html>
+<html lang="en">
+@@include('html/head.html', {
+    'title': 'Бронирование столика'
+})
+<body>
+    <div class="container">
+        @@include('html/header.html')
+        @@include('html/first-block.html', {
+            'headTitle': 'БРОНИРОВАНИЕ',
+            'nowPage': 'БРОНИРОВАНИЕ'
+        })
+        @@include('html/booking-table.html')
+        @@include('html/footer.html')
+    </div>
+    <script src="/js/main.min.js"></script>
+</body>
+</html>
